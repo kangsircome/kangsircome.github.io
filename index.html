@@ -8,7 +8,7 @@
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/sky.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
@@ -41,6 +41,9 @@
 				</section>
 				<!-- 应用概况 -->
                 <section>
+					<section>
+						<h2>应用概况</h2>
+					</section>
 					<section>
 							<p>2018-12-06 ~ 2019.05.08</p>
 							<p>5个月</p>
@@ -89,11 +92,123 @@
 						<p class="ma-text-left">产品从无到有，日渐丰满</p>
 					</section>
 				</section>
+				<!-- 心目中的好作品 -->
+				<section>
+					<section>
+						<h2>心目中的好作品</h2>
+					</section>
+					<section>
+						<section  data-markdown>
+								<script type="text/template">
+									```
+									OC:
+									UIView * table = [[UIView alloc]init];
+									if (self.delegate != nil && [self.delegate respondsToSelector:@selector(tableView:numberOfRowsInSection:)]){
+										[self.delegate tableView:(UITableView*)table numberOfRowsInSection:4];
+									}
+
+									Swift: self.delegate?.tableView(tableView, numberOfRowsInSection: 4)
+									```
+								</script>
+						</section>
+						<p class="fragment">语言选择的最大考量是:</p>
+						<h2 class="fragment">类型安全</h2>
+					</section>
+					<section>
+						<h3>App的本质是什么?</h3>
+						<img class="ma-img" src="/images/image.png" alt="">
+					</section>
+					<section>
+						<ul>
+							<li>构建 — 谁负责构建 model 和 view，以及将两者连接起来？</li>
+							<li>更新 model — 如何处理 view action？</li>
+							<li>改变 view — 如何将 model 的数据应用到 view 上去？</li>
+							<li>view state — 如何处理导航和其他一些 model state 以外的状态？</li>
+							<li>测试 — 为了达到一定程度的测试覆盖，要采取怎样的测试策略？</li>
+						</ul>
+					</section>
+					<section>
+						<h3>App的常见架构</h3>
+						<img src="/images/pattern.png" alt="">
+					</section>
+					<section>
+						<h3>面向协议的MVC优化</h3>
+						<img src="/images/MVC.png" alt="">
+					</section>
+					<section>>
+						<h3>在先前工作流的基础上,实现代码</h3>
+						<img src="/images/Popular.png" alt="">
+					</section>
+					<section>
+						<p>先进的原因+熟悉的架构+面向协议的工作流</p>
+						<section  data-markdown>
+								<script type="text/template">
+									```
+									frankma$ cloc PopularBaseViewController.swift 
+
+									github.com/AlDanial/cloc v 1.82  T=0.02 s (54.4 files/s, 38727.4 lines/s)
+									-------------------------------------------------------------------------------
+									Language                     files          blank        comment           code
+									-------------------------------------------------------------------------------
+									Swift                            1            187             45            480
+									-------------------------------------------------------------------------------
+
+
+									frankma$ cloc SinglePopularCommentController.swift 
+
+									github.com/AlDanial/cloc v 1.82  T=0.01 s (95.3 files/s, 2668.0 lines/s)
+									-------------------------------------------------------------------------------
+									Language                     files          blank        comment           code
+									-------------------------------------------------------------------------------
+									Swift                            1              6              8             14
+									-------------------------------------------------------------------------------
+									```
+								</script>
+						</section>
+					</section>
+					<section>
+						<h3>高效的辅助开发工具</h3>
+					</section>
+					<section>
+						<h4>代码管理</h4>
+						<p>Git + SourceTree + gitFlow</p>
+						<img src="https://raw.githubusercontent.com/quickhack/translations/master/git-workflows-and-tutorials/images/git-workflow-release-cycle-4maintenance.png" alt="">
+					</section>
+					<section>
+						<ul>
+							<li>自动化签名,半自动打包工具:Fastlane </li>
+							<li>苹果官方的测试流工具: TestFight</li>
+							<li>集中管理的页面调度路由</li>
+						</ul>
+					</section>
+					<section>
+							<h3>小结</h3>
+							<p class="ma-text-left">快速/稳定/开放/易测试的结构.现在除了最后一项,其他都具备</p>
+						</section>
+				</section>
+				<!-- 一点工程图纸 -->
+				<section>
+					<section>
+						<h2>一点工程图纸</h2>
+					</section>
+				</section>
+
+				<!-- 个人成长和不足 -->
                 <section>
-					<h2>Vertical</h2>
+					<section>
+						<h2>个人成长和不足</h2>
+					</section>
 					<section>1</section>
 					<section>2</section>
 				</section>
+
+				<!-- 自我规划 -->
+				<section>
+					<section>
+						<h2>自我规划</h2>
+					</section>
+				</section>
+
 			</div>
 		</div>
 
