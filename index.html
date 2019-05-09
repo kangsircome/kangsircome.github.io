@@ -12,6 +12,7 @@
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
+		<link rel="stylesheet" href="css/index.css">
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -25,9 +26,74 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>One</section>
-                <section>Two</section>
-                <section>Three</section>
+				<section>
+						<h2 class="fragment grow">Begin?</h2>
+				</section>
+				<!-- 目录 -->
+				<section>				
+					<ul>
+						<li>应用概况</li>
+						<li>心目中的好作品</li>
+						<li>一点工程图纸</li>
+						<li>个人成长和不足</li>
+						<li>自我规划</li>
+					</ul>
+				</section>
+				<!-- 应用概况 -->
+                <section>
+					<section>
+							<p>2018-12-06 ~ 2019.05.08</p>
+							<p>5个月</p>
+					</section>
+					<section>
+							<section data-markdown>
+									<script type="text/template">
+									<!-- .slide: data-background="#ff0000" -->
+									frankma$ cloc ./ --exclude-dir=Pods
+									816 text files.  
+									775 unique files.    
+									101 files ignored.
+	github.com/AlDanial/cloc v 1.82  T=1.75 s (409.9 files/s, 34990.1 lines/s)
+	-------------------------------------------------------------------------------
+	Language                     files          blank        comment           code
+	-------------------------------------------------------------------------------
+	Swift                          421           9881           5269          37898
+	JSON                           280              0              0           6801
+	Objective C                      4            126            140            592
+	C/C++ Header                     8             45             33            140
+	HTML                             1             33              0             90
+	Markdown                         1              9              0             35
+	XML                              1             18              0             15
+	-------------------------------------------------------------------------------
+	SUM:                           716          10112           5442          45571
+	-------------------------------------------------------------------------------
+									</script>
+							</section>
+					</section>
+					<section>
+						<p>发版时间线</p>
+						<ul>
+							<li>1.2版本 2019-05-06</li>
+							<li>1.1.1版本 2019-04-22</li>
+							<li>1.1 版本 2019-04-19</li>
+							<li>1.0版本 2019-03-23</li>
+						</ul>
+					</section>
+					<section>
+						<img src="./images/change.png" alt="">
+					</section>
+					<section>
+						<h3>小结</h3>
+						<p class="ma-text-left">开发周期内,写了45K行代码，发布了三个大版本，一个修复版本</p>
+						<p class="ma-text-left">从iOS立项到第一个版本输出经历了3个月时间，第二个版本间隔一个月，第三个版本间隔半个月，逐步进入正常的迭代节奏。</p>
+						<p class="ma-text-left">产品从无到有，日渐丰满</p>
+					</section>
+				</section>
+                <section>
+					<h2>Vertical</h2>
+					<section>1</section>
+					<section>2</section>
+				</section>
 			</div>
 		</div>
 
